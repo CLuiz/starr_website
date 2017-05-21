@@ -9,11 +9,14 @@ router.use(function (req, res, next) {
 });
 
 router.get('/', function (req, res) {
-    res.sendFile(path + 'index.html');
+    res.sendFile(path + 'eastside.html');
 });
 
 router.get('/about', function (req, res) {
     res.sendFile(path + 'about.html');
+});
+router.get('/westside', function (req, res) {
+    res.sendFile(path + 'westside.html');
 });
 
 router.get('/contact', function (req, res) {
