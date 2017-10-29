@@ -1,5 +1,8 @@
-var express = require('express');
-var app = express();
+const express        = require('express');
+const MongoClient    = require('mongodb').MongoClient;
+const bodyParser     = require('body-parser');
+const app            = express();
+
 var router = express.Router();
 var path = __dirname + '/views/';
 
